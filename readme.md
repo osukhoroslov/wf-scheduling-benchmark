@@ -18,9 +18,9 @@ $ git clone https://github.com/osukhoroslov/dslab.git
 
 To run DSLab DAG you will also need to [install Rust](https://www.rust-lang.org/tools/install). 
 
-## Running experiments
+## Running benchmark
 
-Experiments are run with `dag-run-experiment` tool by passing it the path to benchmark configuration file:
+Benchmark is run with `dag-run-experiment` tool by passing it the path to benchmark configuration file:
 
 ```
 $ cd dslab/tools/dag-run-experiment
