@@ -1,0 +1,4867 @@
+{
+    "name": "1000genome-20200401T041040Z-0",
+    "description": "Trace generated with wrench-pegasus-parser.py from http://wrench-project.org",
+    "createdAt": "2020-04-01T20:22:33.273855Z",
+    "schemaVersion": "1.4",
+    "wms": {
+        "url": "http://pegasus.isi.edu",
+        "version": "4.9.3",
+        "name": "Pegasus"
+    },
+    "author": {
+        "name": "rafsilva",
+        "email": "support@wrench-project.org"
+    },
+    "workflow": {
+        "machines": [
+            {
+                "nodeName": "pegasus-5",
+                "system": "linux",
+                "architecture": "x86_64",
+                "release": "4.15.0-88-generic",
+                "cpu": {
+                    "count": 48,
+                    "vendor": "GenuineIntel",
+                    "speed": 2419
+                },
+                "memoryInBytes": 131795984000
+            },
+            {
+                "nodeName": "pegasus-2",
+                "system": "linux",
+                "architecture": "x86_64",
+                "release": "4.15.0-88-generic",
+                "cpu": {
+                    "count": 48,
+                    "vendor": "GenuineIntel",
+                    "speed": 1200
+                },
+                "memoryInBytes": 131795984000
+            }
+        ],
+        "executedAt": "20200401T041258+0000",
+        "tasks": [
+            {
+                "name": "individuals_ID0000001",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr19.100000.vcf",
+                        "sizeInBytes": 1014389098
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19n-1-1001.tar.gz",
+                        "sizeInBytes": 28640
+                    }
+                ],
+                "avgCPU": 92.7452,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000001",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr19.100000.vcf",
+                        "19",
+                        "1",
+                        "1001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 97.66
+            },
+            {
+                "name": "individuals_ID0000002",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr19.100000.vcf",
+                        "sizeInBytes": 1014389098
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19n-1001-2001.tar.gz",
+                        "sizeInBytes": 28519
+                    }
+                ],
+                "avgCPU": 79.5674,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000002",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr19.100000.vcf",
+                        "19",
+                        "1001",
+                        "2001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 113.456
+            },
+            {
+                "name": "individuals_ID0000003",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr19.100000.vcf",
+                        "sizeInBytes": 1014389098
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19n-2001-3001.tar.gz",
+                        "sizeInBytes": 28496
+                    }
+                ],
+                "avgCPU": 80.4734,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000003",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr19.100000.vcf",
+                        "19",
+                        "2001",
+                        "3001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 112.836
+            },
+            {
+                "name": "individuals_ID0000004",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr19.100000.vcf",
+                        "sizeInBytes": 1014389098
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19n-3001-4001.tar.gz",
+                        "sizeInBytes": 28501
+                    }
+                ],
+                "avgCPU": 73.1332,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000004",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr19.100000.vcf",
+                        "19",
+                        "3001",
+                        "4001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 124.734
+            },
+            {
+                "name": "individuals_ID0000005",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr19.100000.vcf",
+                        "sizeInBytes": 1014389098
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19n-4001-5001.tar.gz",
+                        "sizeInBytes": 28508
+                    }
+                ],
+                "avgCPU": 80.6916,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000005",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr19.100000.vcf",
+                        "19",
+                        "4001",
+                        "5001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 112.485
+            },
+            {
+                "name": "individuals_ID0000006",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr19.100000.vcf",
+                        "sizeInBytes": 1014389098
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19n-5001-6001.tar.gz",
+                        "sizeInBytes": 28617
+                    }
+                ],
+                "avgCPU": 92.3754,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000006",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr19.100000.vcf",
+                        "19",
+                        "5001",
+                        "6001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 97.841
+            },
+            {
+                "name": "individuals_ID0000007",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr19.100000.vcf",
+                        "sizeInBytes": 1014389098
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19n-6001-7001.tar.gz",
+                        "sizeInBytes": 28614
+                    }
+                ],
+                "avgCPU": 79.9358,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000007",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr19.100000.vcf",
+                        "19",
+                        "6001",
+                        "7001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 113.346
+            },
+            {
+                "name": "individuals_ID0000008",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr19.100000.vcf",
+                        "sizeInBytes": 1014389098
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19n-7001-8001.tar.gz",
+                        "sizeInBytes": 28540
+                    }
+                ],
+                "avgCPU": 98.4993,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000008",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr19.100000.vcf",
+                        "19",
+                        "7001",
+                        "8001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 91.888
+            },
+            {
+                "name": "individuals_ID0000009",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr19.100000.vcf",
+                        "sizeInBytes": 1014389098
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19n-8001-9001.tar.gz",
+                        "sizeInBytes": 28538
+                    }
+                ],
+                "avgCPU": 90.0379,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000009",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr19.100000.vcf",
+                        "19",
+                        "8001",
+                        "9001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 100.39
+            },
+            {
+                "name": "individuals_ID0000010",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr19.100000.vcf",
+                        "sizeInBytes": 1014389098
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19n-9001-10001.tar.gz",
+                        "sizeInBytes": 28595
+                    }
+                ],
+                "avgCPU": 92.7033,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000010",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr19.100000.vcf",
+                        "19",
+                        "9001",
+                        "10001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 97.702
+            },
+            {
+                "name": "individuals_merge_ID0000011",
+                "type": "compute",
+                "parents": [
+                    "individuals_ID0000004",
+                    "individuals_ID0000005",
+                    "individuals_ID0000006",
+                    "individuals_ID0000007",
+                    "individuals_ID0000001",
+                    "individuals_ID0000002",
+                    "individuals_ID0000003",
+                    "individuals_ID0000008",
+                    "individuals_ID0000009",
+                    "individuals_ID0000010"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "chr19n-5001-6001.tar.gz",
+                        "sizeInBytes": 28617
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n-2001-3001.tar.gz",
+                        "sizeInBytes": 28496
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n-7001-8001.tar.gz",
+                        "sizeInBytes": 28540
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n-8001-9001.tar.gz",
+                        "sizeInBytes": 28538
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n-9001-10001.tar.gz",
+                        "sizeInBytes": 28595
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n-3001-4001.tar.gz",
+                        "sizeInBytes": 28501
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n-4001-5001.tar.gz",
+                        "sizeInBytes": 28508
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n-1-1001.tar.gz",
+                        "sizeInBytes": 28640
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n-1001-2001.tar.gz",
+                        "sizeInBytes": 28519
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n-6001-7001.tar.gz",
+                        "sizeInBytes": 28614
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19n.tar.gz",
+                        "sizeInBytes": 24458
+                    }
+                ],
+                "avgCPU": 107.8304,
+                "machine": "pegasus-5",
+                "priority": 30,
+                "id": "ID0000011",
+                "category": "individuals_merge",
+                "command": {
+                    "program": "individuals_merge",
+                    "arguments": [
+                        "19",
+                        "chr19n-1-1001.tar.gz",
+                        "chr19n-1001-2001.tar.gz",
+                        "chr19n-2001-3001.tar.gz",
+                        "chr19n-3001-4001.tar.gz",
+                        "chr19n-4001-5001.tar.gz",
+                        "chr19n-5001-6001.tar.gz",
+                        "chr19n-6001-7001.tar.gz",
+                        "chr19n-7001-8001.tar.gz",
+                        "chr19n-8001-9001.tar.gz",
+                        "chr19n-9001-10001.tar.gz"
+                    ]
+                },
+                "runtimeInSeconds": 39.449
+            },
+            {
+                "name": "sifting_ID0000012",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr19.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf",
+                        "sizeInBytes": 470301753
+                    },
+                    {
+                        "link": "output",
+                        "name": "sifted.SIFT.chr19.txt",
+                        "sizeInBytes": 1481880
+                    }
+                ],
+                "avgCPU": 7.6294,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000012",
+                "category": "sifting",
+                "command": {
+                    "program": "sifting",
+                    "arguments": [
+                        "ALL.chr19.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf",
+                        "19"
+                    ]
+                },
+                "runtimeInSeconds": 12.596
+            },
+            {
+                "name": "individuals_ID0000013",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr20.100000.vcf",
+                        "sizeInBytes": 1014340420
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20n-1-1001.tar.gz",
+                        "sizeInBytes": 28521
+                    }
+                ],
+                "avgCPU": 107.6799,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000013",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr20.100000.vcf",
+                        "20",
+                        "1",
+                        "1001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 83.4
+            },
+            {
+                "name": "individuals_ID0000014",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr20.100000.vcf",
+                        "sizeInBytes": 1014340420
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20n-1001-2001.tar.gz",
+                        "sizeInBytes": 28535
+                    }
+                ],
+                "avgCPU": 108.1926,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000014",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr20.100000.vcf",
+                        "20",
+                        "1001",
+                        "2001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 83.136
+            },
+            {
+                "name": "individuals_ID0000015",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr20.100000.vcf",
+                        "sizeInBytes": 1014340420
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20n-2001-3001.tar.gz",
+                        "sizeInBytes": 28573
+                    }
+                ],
+                "avgCPU": 111.9269,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000015",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr20.100000.vcf",
+                        "20",
+                        "2001",
+                        "3001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 80.289
+            },
+            {
+                "name": "individuals_ID0000016",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr20.100000.vcf",
+                        "sizeInBytes": 1014340420
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20n-3001-4001.tar.gz",
+                        "sizeInBytes": 28506
+                    }
+                ],
+                "avgCPU": 123.8585,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000016",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr20.100000.vcf",
+                        "20",
+                        "3001",
+                        "4001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 72.188
+            },
+            {
+                "name": "individuals_ID0000017",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr20.100000.vcf",
+                        "sizeInBytes": 1014340420
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20n-4001-5001.tar.gz",
+                        "sizeInBytes": 28405
+                    }
+                ],
+                "avgCPU": 121.4882,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000017",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr20.100000.vcf",
+                        "20",
+                        "4001",
+                        "5001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 73.459
+            },
+            {
+                "name": "individuals_ID0000018",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr20.100000.vcf",
+                        "sizeInBytes": 1014340420
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20n-5001-6001.tar.gz",
+                        "sizeInBytes": 28487
+                    }
+                ],
+                "avgCPU": 114.0792,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000018",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr20.100000.vcf",
+                        "20",
+                        "5001",
+                        "6001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 78.733
+            },
+            {
+                "name": "individuals_ID0000019",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr20.100000.vcf",
+                        "sizeInBytes": 1014340420
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20n-6001-7001.tar.gz",
+                        "sizeInBytes": 28532
+                    }
+                ],
+                "avgCPU": 107.4813,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000019",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr20.100000.vcf",
+                        "20",
+                        "6001",
+                        "7001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 83.996
+            },
+            {
+                "name": "individuals_ID0000020",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr20.100000.vcf",
+                        "sizeInBytes": 1014340420
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20n-7001-8001.tar.gz",
+                        "sizeInBytes": 28543
+                    }
+                ],
+                "avgCPU": 101.4541,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000020",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr20.100000.vcf",
+                        "20",
+                        "7001",
+                        "8001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 89.193
+            },
+            {
+                "name": "individuals_ID0000021",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr20.100000.vcf",
+                        "sizeInBytes": 1014340420
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20n-8001-9001.tar.gz",
+                        "sizeInBytes": 28500
+                    }
+                ],
+                "avgCPU": 79.6106,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000021",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr20.100000.vcf",
+                        "20",
+                        "8001",
+                        "9001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 113.912
+            },
+            {
+                "name": "individuals_ID0000022",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr20.100000.vcf",
+                        "sizeInBytes": 1014340420
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20n-9001-10001.tar.gz",
+                        "sizeInBytes": 28520
+                    }
+                ],
+                "avgCPU": 103.2248,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000022",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr20.100000.vcf",
+                        "20",
+                        "9001",
+                        "10001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 87.012
+            },
+            {
+                "name": "individuals_merge_ID0000023",
+                "type": "compute",
+                "parents": [
+                    "individuals_ID0000015",
+                    "individuals_ID0000016",
+                    "individuals_ID0000017",
+                    "individuals_ID0000018",
+                    "individuals_ID0000013",
+                    "individuals_ID0000014",
+                    "individuals_ID0000019",
+                    "individuals_ID0000022",
+                    "individuals_ID0000020",
+                    "individuals_ID0000021"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "chr20n-9001-10001.tar.gz",
+                        "sizeInBytes": 28520
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n-1-1001.tar.gz",
+                        "sizeInBytes": 28521
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n-4001-5001.tar.gz",
+                        "sizeInBytes": 28405
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n-2001-3001.tar.gz",
+                        "sizeInBytes": 28573
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n-8001-9001.tar.gz",
+                        "sizeInBytes": 28500
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n-5001-6001.tar.gz",
+                        "sizeInBytes": 28487
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n-3001-4001.tar.gz",
+                        "sizeInBytes": 28506
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n-7001-8001.tar.gz",
+                        "sizeInBytes": 28543
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n-1001-2001.tar.gz",
+                        "sizeInBytes": 28535
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n-6001-7001.tar.gz",
+                        "sizeInBytes": 28532
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20n.tar.gz",
+                        "sizeInBytes": 24570
+                    }
+                ],
+                "avgCPU": 107.7903,
+                "machine": "pegasus-5",
+                "priority": 30,
+                "id": "ID0000023",
+                "category": "individuals_merge",
+                "command": {
+                    "program": "individuals_merge",
+                    "arguments": [
+                        "20",
+                        "chr20n-1-1001.tar.gz",
+                        "chr20n-1001-2001.tar.gz",
+                        "chr20n-2001-3001.tar.gz",
+                        "chr20n-3001-4001.tar.gz",
+                        "chr20n-4001-5001.tar.gz",
+                        "chr20n-5001-6001.tar.gz",
+                        "chr20n-6001-7001.tar.gz",
+                        "chr20n-7001-8001.tar.gz",
+                        "chr20n-8001-9001.tar.gz",
+                        "chr20n-9001-10001.tar.gz"
+                    ]
+                },
+                "runtimeInSeconds": 39.254
+            },
+            {
+                "name": "sifting_ID0000024",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr20.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf",
+                        "sizeInBytes": 442329007
+                    },
+                    {
+                        "link": "output",
+                        "name": "sifted.SIFT.chr20.txt",
+                        "sizeInBytes": 523567
+                    }
+                ],
+                "avgCPU": 14.2179,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000024",
+                "category": "sifting",
+                "command": {
+                    "program": "sifting",
+                    "arguments": [
+                        "ALL.chr20.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf",
+                        "20"
+                    ]
+                },
+                "runtimeInSeconds": 4.424
+            },
+            {
+                "name": "individuals_ID0000025",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr21.100000.vcf",
+                        "sizeInBytes": 1014442803
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21n-1-1001.tar.gz",
+                        "sizeInBytes": 28610
+                    }
+                ],
+                "avgCPU": 81.0961,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000025",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr21.100000.vcf",
+                        "21",
+                        "1",
+                        "1001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 111.617
+            },
+            {
+                "name": "individuals_ID0000026",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr21.100000.vcf",
+                        "sizeInBytes": 1014442803
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21n-1001-2001.tar.gz",
+                        "sizeInBytes": 28563
+                    }
+                ],
+                "avgCPU": 80.3818,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000026",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr21.100000.vcf",
+                        "21",
+                        "1001",
+                        "2001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 112.457
+            },
+            {
+                "name": "individuals_ID0000027",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr21.100000.vcf",
+                        "sizeInBytes": 1014442803
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21n-2001-3001.tar.gz",
+                        "sizeInBytes": 28526
+                    }
+                ],
+                "avgCPU": 97.9908,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000027",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr21.100000.vcf",
+                        "21",
+                        "2001",
+                        "3001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 92.573
+            },
+            {
+                "name": "individuals_ID0000028",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr21.100000.vcf",
+                        "sizeInBytes": 1014442803
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21n-3001-4001.tar.gz",
+                        "sizeInBytes": 28612
+                    }
+                ],
+                "avgCPU": 78.9449,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000028",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr21.100000.vcf",
+                        "21",
+                        "3001",
+                        "4001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 115.198
+            },
+            {
+                "name": "individuals_ID0000029",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr21.100000.vcf",
+                        "sizeInBytes": 1014442803
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21n-4001-5001.tar.gz",
+                        "sizeInBytes": 28600
+                    }
+                ],
+                "avgCPU": 78.5384,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000029",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr21.100000.vcf",
+                        "21",
+                        "4001",
+                        "5001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 115.76
+            },
+            {
+                "name": "individuals_ID0000030",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr21.100000.vcf",
+                        "sizeInBytes": 1014442803
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21n-5001-6001.tar.gz",
+                        "sizeInBytes": 28582
+                    }
+                ],
+                "avgCPU": 80.1211,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000030",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr21.100000.vcf",
+                        "21",
+                        "5001",
+                        "6001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 112.944
+            },
+            {
+                "name": "individuals_ID0000031",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr21.100000.vcf",
+                        "sizeInBytes": 1014442803
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21n-6001-7001.tar.gz",
+                        "sizeInBytes": 28561
+                    }
+                ],
+                "avgCPU": 72.9847,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000031",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr21.100000.vcf",
+                        "21",
+                        "6001",
+                        "7001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 124.433
+            },
+            {
+                "name": "individuals_ID0000032",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr21.100000.vcf",
+                        "sizeInBytes": 1014442803
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21n-7001-8001.tar.gz",
+                        "sizeInBytes": 28559
+                    }
+                ],
+                "avgCPU": 97.269,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000032",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr21.100000.vcf",
+                        "21",
+                        "7001",
+                        "8001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 92.861
+            },
+            {
+                "name": "individuals_ID0000033",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr21.100000.vcf",
+                        "sizeInBytes": 1014442803
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21n-8001-9001.tar.gz",
+                        "sizeInBytes": 28629
+                    }
+                ],
+                "avgCPU": 92.3354,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000033",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr21.100000.vcf",
+                        "21",
+                        "8001",
+                        "9001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 97.827
+            },
+            {
+                "name": "individuals_ID0000034",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr21.100000.vcf",
+                        "sizeInBytes": 1014442803
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21n-9001-10001.tar.gz",
+                        "sizeInBytes": 28524
+                    }
+                ],
+                "avgCPU": 84.7215,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000034",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr21.100000.vcf",
+                        "21",
+                        "9001",
+                        "10001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 106.686
+            },
+            {
+                "name": "individuals_merge_ID0000035",
+                "type": "compute",
+                "parents": [
+                    "individuals_ID0000026",
+                    "individuals_ID0000027",
+                    "individuals_ID0000028",
+                    "individuals_ID0000029",
+                    "individuals_ID0000025",
+                    "individuals_ID0000033",
+                    "individuals_ID0000034",
+                    "individuals_ID0000030",
+                    "individuals_ID0000031",
+                    "individuals_ID0000032"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "chr21n-4001-5001.tar.gz",
+                        "sizeInBytes": 28600
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n-9001-10001.tar.gz",
+                        "sizeInBytes": 28524
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n-5001-6001.tar.gz",
+                        "sizeInBytes": 28582
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n-7001-8001.tar.gz",
+                        "sizeInBytes": 28559
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n-6001-7001.tar.gz",
+                        "sizeInBytes": 28561
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n-1001-2001.tar.gz",
+                        "sizeInBytes": 28563
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n-8001-9001.tar.gz",
+                        "sizeInBytes": 28629
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n-1-1001.tar.gz",
+                        "sizeInBytes": 28610
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n-3001-4001.tar.gz",
+                        "sizeInBytes": 28612
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n-2001-3001.tar.gz",
+                        "sizeInBytes": 28526
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21n.tar.gz",
+                        "sizeInBytes": 24538
+                    }
+                ],
+                "avgCPU": 107.6658,
+                "machine": "pegasus-5",
+                "priority": 30,
+                "id": "ID0000035",
+                "category": "individuals_merge",
+                "command": {
+                    "program": "individuals_merge",
+                    "arguments": [
+                        "21",
+                        "chr21n-1-1001.tar.gz",
+                        "chr21n-1001-2001.tar.gz",
+                        "chr21n-2001-3001.tar.gz",
+                        "chr21n-3001-4001.tar.gz",
+                        "chr21n-4001-5001.tar.gz",
+                        "chr21n-5001-6001.tar.gz",
+                        "chr21n-6001-7001.tar.gz",
+                        "chr21n-7001-8001.tar.gz",
+                        "chr21n-8001-9001.tar.gz",
+                        "chr21n-9001-10001.tar.gz"
+                    ]
+                },
+                "runtimeInSeconds": 39.774
+            },
+            {
+                "name": "sifting_ID0000036",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr21.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf",
+                        "sizeInBytes": 267806263
+                    },
+                    {
+                        "link": "output",
+                        "name": "sifted.SIFT.chr21.txt",
+                        "sizeInBytes": 231958
+                    }
+                ],
+                "avgCPU": 15.3363,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000036",
+                "category": "sifting",
+                "command": {
+                    "program": "sifting",
+                    "arguments": [
+                        "ALL.chr21.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf",
+                        "21"
+                    ]
+                },
+                "runtimeInSeconds": 2.23
+            },
+            {
+                "name": "individuals_ID0000037",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "ALL.chr22.100000.vcf",
+                        "sizeInBytes": 1014493636
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22n-1-1001.tar.gz",
+                        "sizeInBytes": 28567
+                    }
+                ],
+                "avgCPU": 72.837,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000037",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr22.100000.vcf",
+                        "22",
+                        "1",
+                        "1001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 124.758
+            },
+            {
+                "name": "individuals_ID0000038",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "ALL.chr22.100000.vcf",
+                        "sizeInBytes": 1014493636
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22n-1001-2001.tar.gz",
+                        "sizeInBytes": 28423
+                    }
+                ],
+                "avgCPU": 80.4645,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000038",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr22.100000.vcf",
+                        "22",
+                        "1001",
+                        "2001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 112.938
+            },
+            {
+                "name": "individuals_ID0000039",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "ALL.chr22.100000.vcf",
+                        "sizeInBytes": 1014493636
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22n-2001-3001.tar.gz",
+                        "sizeInBytes": 28539
+                    }
+                ],
+                "avgCPU": 101.602,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000039",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr22.100000.vcf",
+                        "22",
+                        "2001",
+                        "3001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 89.141
+            },
+            {
+                "name": "individuals_ID0000040",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "ALL.chr22.100000.vcf",
+                        "sizeInBytes": 1014493636
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22n-3001-4001.tar.gz",
+                        "sizeInBytes": 28507
+                    }
+                ],
+                "avgCPU": 88.4362,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000040",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr22.100000.vcf",
+                        "22",
+                        "3001",
+                        "4001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 102.527
+            },
+            {
+                "name": "individuals_ID0000041",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "ALL.chr22.100000.vcf",
+                        "sizeInBytes": 1014493636
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22n-4001-5001.tar.gz",
+                        "sizeInBytes": 28525
+                    }
+                ],
+                "avgCPU": 72.9348,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000041",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr22.100000.vcf",
+                        "22",
+                        "4001",
+                        "5001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 124.747
+            },
+            {
+                "name": "individuals_ID0000042",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "ALL.chr22.100000.vcf",
+                        "sizeInBytes": 1014493636
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22n-5001-6001.tar.gz",
+                        "sizeInBytes": 28479
+                    }
+                ],
+                "avgCPU": 108.5777,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000042",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr22.100000.vcf",
+                        "22",
+                        "5001",
+                        "6001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 82.505
+            },
+            {
+                "name": "individuals_ID0000043",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "ALL.chr22.100000.vcf",
+                        "sizeInBytes": 1014493636
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22n-6001-7001.tar.gz",
+                        "sizeInBytes": 28542
+                    }
+                ],
+                "avgCPU": 93.0372,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000043",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr22.100000.vcf",
+                        "22",
+                        "6001",
+                        "7001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 97.891
+            },
+            {
+                "name": "individuals_ID0000044",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "ALL.chr22.100000.vcf",
+                        "sizeInBytes": 1014493636
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22n-7001-8001.tar.gz",
+                        "sizeInBytes": 28469
+                    }
+                ],
+                "avgCPU": 97.7539,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000044",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr22.100000.vcf",
+                        "22",
+                        "7001",
+                        "8001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 92.472
+            },
+            {
+                "name": "individuals_ID0000045",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "ALL.chr22.100000.vcf",
+                        "sizeInBytes": 1014493636
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22n-8001-9001.tar.gz",
+                        "sizeInBytes": 28427
+                    }
+                ],
+                "avgCPU": 103.5481,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000045",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr22.100000.vcf",
+                        "22",
+                        "8001",
+                        "9001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 86.92
+            },
+            {
+                "name": "individuals_ID0000046",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "ALL.chr22.100000.vcf",
+                        "sizeInBytes": 1014493636
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22n-9001-10001.tar.gz",
+                        "sizeInBytes": 28431
+                    }
+                ],
+                "avgCPU": 81.0872,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000046",
+                "category": "individuals",
+                "command": {
+                    "program": "individuals",
+                    "arguments": [
+                        "ALL.chr22.100000.vcf",
+                        "22",
+                        "9001",
+                        "10001",
+                        "10000"
+                    ]
+                },
+                "runtimeInSeconds": 111.998
+            },
+            {
+                "name": "individuals_merge_ID0000047",
+                "type": "compute",
+                "parents": [
+                    "individuals_ID0000037",
+                    "individuals_ID0000038",
+                    "individuals_ID0000039",
+                    "individuals_ID0000044",
+                    "individuals_ID0000045",
+                    "individuals_ID0000046",
+                    "individuals_ID0000040",
+                    "individuals_ID0000041",
+                    "individuals_ID0000042",
+                    "individuals_ID0000043"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "chr22n-4001-5001.tar.gz",
+                        "sizeInBytes": 28525
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n-3001-4001.tar.gz",
+                        "sizeInBytes": 28507
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n-1-1001.tar.gz",
+                        "sizeInBytes": 28567
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n-2001-3001.tar.gz",
+                        "sizeInBytes": 28539
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n-5001-6001.tar.gz",
+                        "sizeInBytes": 28479
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n-6001-7001.tar.gz",
+                        "sizeInBytes": 28542
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n-8001-9001.tar.gz",
+                        "sizeInBytes": 28427
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n-7001-8001.tar.gz",
+                        "sizeInBytes": 28469
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n-1001-2001.tar.gz",
+                        "sizeInBytes": 28423
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n-9001-10001.tar.gz",
+                        "sizeInBytes": 28431
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22n.tar.gz",
+                        "sizeInBytes": 24492
+                    }
+                ],
+                "avgCPU": 107.8521,
+                "machine": "pegasus-5",
+                "priority": 30,
+                "id": "ID0000047",
+                "category": "individuals_merge",
+                "command": {
+                    "program": "individuals_merge",
+                    "arguments": [
+                        "22",
+                        "chr22n-1-1001.tar.gz",
+                        "chr22n-1001-2001.tar.gz",
+                        "chr22n-2001-3001.tar.gz",
+                        "chr22n-3001-4001.tar.gz",
+                        "chr22n-4001-5001.tar.gz",
+                        "chr22n-5001-6001.tar.gz",
+                        "chr22n-6001-7001.tar.gz",
+                        "chr22n-7001-8001.tar.gz",
+                        "chr22n-8001-9001.tar.gz",
+                        "chr22n-9001-10001.tar.gz"
+                    ]
+                },
+                "runtimeInSeconds": 39.429
+            },
+            {
+                "name": "sifting_ID0000048",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL.chr22.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf",
+                        "sizeInBytes": 280949919
+                    },
+                    {
+                        "link": "output",
+                        "name": "sifted.SIFT.chr22.txt",
+                        "sizeInBytes": 480587
+                    }
+                ],
+                "avgCPU": 7.3267,
+                "machine": "pegasus-5",
+                "priority": 20,
+                "id": "ID0000048",
+                "category": "sifting",
+                "command": {
+                    "program": "sifting",
+                    "arguments": [
+                        "ALL.chr22.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf",
+                        "22"
+                    ]
+                },
+                "runtimeInSeconds": 4.818
+            },
+            {
+                "name": "mutation_overlap_ID0000049",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000012",
+                    "individuals_merge_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr19.txt",
+                        "sizeInBytes": 1481880
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "AFR",
+                        "sizeInBytes": 8088
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n.tar.gz",
+                        "sizeInBytes": 24458
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19-AFR.tar.gz",
+                        "sizeInBytes": 150825
+                    }
+                ],
+                "avgCPU": 17.9128,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000049",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "19",
+                        "-pop",
+                        "AFR"
+                    ]
+                },
+                "runtimeInSeconds": 24.943
+            },
+            {
+                "name": "frequency_ID0000050",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000012",
+                    "individuals_merge_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr19.txt",
+                        "sizeInBytes": 1481880
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "AFR",
+                        "sizeInBytes": 8088
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n.tar.gz",
+                        "sizeInBytes": 24458
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19-AFR-freq.tar.gz",
+                        "sizeInBytes": 280544
+                    }
+                ],
+                "avgCPU": 56.4764,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000050",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "19",
+                        "-pop",
+                        "AFR"
+                    ]
+                },
+                "runtimeInSeconds": 162.969
+            },
+            {
+                "name": "mutation_overlap_ID0000051",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000012",
+                    "individuals_merge_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr19.txt",
+                        "sizeInBytes": 1481880
+                    },
+                    {
+                        "link": "input",
+                        "name": "GBR",
+                        "sizeInBytes": 856
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n.tar.gz",
+                        "sizeInBytes": 24458
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19-GBR.tar.gz",
+                        "sizeInBytes": 142892
+                    }
+                ],
+                "avgCPU": 10.1564,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000051",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "19",
+                        "-pop",
+                        "GBR"
+                    ]
+                },
+                "runtimeInSeconds": 21.553
+            },
+            {
+                "name": "frequency_ID0000052",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000012",
+                    "individuals_merge_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr19.txt",
+                        "sizeInBytes": 1481880
+                    },
+                    {
+                        "link": "input",
+                        "name": "GBR",
+                        "sizeInBytes": 856
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n.tar.gz",
+                        "sizeInBytes": 24458
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19-GBR-freq.tar.gz",
+                        "sizeInBytes": 228259
+                    }
+                ],
+                "avgCPU": 57.6384,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000052",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "19",
+                        "-pop",
+                        "GBR"
+                    ]
+                },
+                "runtimeInSeconds": 157.782
+            },
+            {
+                "name": "mutation_overlap_ID0000053",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000012",
+                    "individuals_merge_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL",
+                        "sizeInBytes": 28000
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr19.txt",
+                        "sizeInBytes": 1481880
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n.tar.gz",
+                        "sizeInBytes": 24458
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19-ALL.tar.gz",
+                        "sizeInBytes": 172595
+                    }
+                ],
+                "avgCPU": 36.4718,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000053",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "19",
+                        "-pop",
+                        "ALL"
+                    ]
+                },
+                "runtimeInSeconds": 54.305
+            },
+            {
+                "name": "frequency_ID0000054",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000012",
+                    "individuals_merge_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL",
+                        "sizeInBytes": 28000
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr19.txt",
+                        "sizeInBytes": 1481880
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n.tar.gz",
+                        "sizeInBytes": 24458
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19-ALL-freq.tar.gz",
+                        "sizeInBytes": 293308
+                    }
+                ],
+                "avgCPU": 60.7195,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000054",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "19",
+                        "-pop",
+                        "ALL"
+                    ]
+                },
+                "runtimeInSeconds": 151.556
+            },
+            {
+                "name": "mutation_overlap_ID0000055",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000012",
+                    "individuals_merge_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr19.txt",
+                        "sizeInBytes": 1481880
+                    },
+                    {
+                        "link": "input",
+                        "name": "SAS",
+                        "sizeInBytes": 5248
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n.tar.gz",
+                        "sizeInBytes": 24458
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19-SAS.tar.gz",
+                        "sizeInBytes": 149799
+                    }
+                ],
+                "avgCPU": 38.5875,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000055",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "19",
+                        "-pop",
+                        "SAS"
+                    ]
+                },
+                "runtimeInSeconds": 9.218
+            },
+            {
+                "name": "frequency_ID0000056",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000012",
+                    "individuals_merge_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr19.txt",
+                        "sizeInBytes": 1481880
+                    },
+                    {
+                        "link": "input",
+                        "name": "SAS",
+                        "sizeInBytes": 5248
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n.tar.gz",
+                        "sizeInBytes": 24458
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19-SAS-freq.tar.gz",
+                        "sizeInBytes": 271139
+                    }
+                ],
+                "avgCPU": 61.0766,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000056",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "19",
+                        "-pop",
+                        "SAS"
+                    ]
+                },
+                "runtimeInSeconds": 148.25
+            },
+            {
+                "name": "mutation_overlap_ID0000057",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000012",
+                    "individuals_merge_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "EAS",
+                        "sizeInBytes": 4896
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr19.txt",
+                        "sizeInBytes": 1481880
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n.tar.gz",
+                        "sizeInBytes": 24458
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19-EAS.tar.gz",
+                        "sizeInBytes": 148897
+                    }
+                ],
+                "avgCPU": 19.5624,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000057",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "19",
+                        "-pop",
+                        "EAS"
+                    ]
+                },
+                "runtimeInSeconds": 19.834
+            },
+            {
+                "name": "frequency_ID0000058",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000012",
+                    "individuals_merge_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "EAS",
+                        "sizeInBytes": 4896
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr19.txt",
+                        "sizeInBytes": 1481880
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n.tar.gz",
+                        "sizeInBytes": 24458
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19-EAS-freq.tar.gz",
+                        "sizeInBytes": 272669
+                    }
+                ],
+                "avgCPU": 60.2606,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000058",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "19",
+                        "-pop",
+                        "EAS"
+                    ]
+                },
+                "runtimeInSeconds": 151.545
+            },
+            {
+                "name": "mutation_overlap_ID0000059",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000012",
+                    "individuals_merge_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr19.txt",
+                        "sizeInBytes": 1481880
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "AMR",
+                        "sizeInBytes": 4248
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n.tar.gz",
+                        "sizeInBytes": 24458
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19-AMR.tar.gz",
+                        "sizeInBytes": 148184
+                    }
+                ],
+                "avgCPU": 38.6737,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000059",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "19",
+                        "-pop",
+                        "AMR"
+                    ]
+                },
+                "runtimeInSeconds": 7.434
+            },
+            {
+                "name": "frequency_ID0000060",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000012",
+                    "individuals_merge_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr19.txt",
+                        "sizeInBytes": 1481880
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "AMR",
+                        "sizeInBytes": 4248
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n.tar.gz",
+                        "sizeInBytes": 24458
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19-AMR-freq.tar.gz",
+                        "sizeInBytes": 266409
+                    }
+                ],
+                "avgCPU": 64.883,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000060",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "19",
+                        "-pop",
+                        "AMR"
+                    ]
+                },
+                "runtimeInSeconds": 137.805
+            },
+            {
+                "name": "mutation_overlap_ID0000061",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000012",
+                    "individuals_merge_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "EUR",
+                        "sizeInBytes": 5312
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr19.txt",
+                        "sizeInBytes": 1481880
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n.tar.gz",
+                        "sizeInBytes": 24458
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19-EUR.tar.gz",
+                        "sizeInBytes": 147585
+                    }
+                ],
+                "avgCPU": 20.0114,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000061",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "19",
+                        "-pop",
+                        "EUR"
+                    ]
+                },
+                "runtimeInSeconds": 19.279
+            },
+            {
+                "name": "frequency_ID0000062",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000012",
+                    "individuals_merge_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "EUR",
+                        "sizeInBytes": 5312
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr19.txt",
+                        "sizeInBytes": 1481880
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr19n.tar.gz",
+                        "sizeInBytes": 24458
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr19-EUR-freq.tar.gz",
+                        "sizeInBytes": 274317
+                    }
+                ],
+                "avgCPU": 59.0015,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000062",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "19",
+                        "-pop",
+                        "EUR"
+                    ]
+                },
+                "runtimeInSeconds": 153.274
+            },
+            {
+                "name": "mutation_overlap_ID0000063",
+                "type": "compute",
+                "parents": [
+                    "individuals_merge_ID0000023",
+                    "sifting_ID0000024"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "chr20n.tar.gz",
+                        "sizeInBytes": 24570
+                    },
+                    {
+                        "link": "input",
+                        "name": "AFR",
+                        "sizeInBytes": 8088
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr20.txt",
+                        "sizeInBytes": 523567
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20-AFR.tar.gz",
+                        "sizeInBytes": 147571
+                    }
+                ],
+                "avgCPU": 47.9343,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000063",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "20",
+                        "-pop",
+                        "AFR"
+                    ]
+                },
+                "runtimeInSeconds": 8.278
+            },
+            {
+                "name": "frequency_ID0000064",
+                "type": "compute",
+                "parents": [
+                    "individuals_merge_ID0000023",
+                    "sifting_ID0000024"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "chr20n.tar.gz",
+                        "sizeInBytes": 24570
+                    },
+                    {
+                        "link": "input",
+                        "name": "AFR",
+                        "sizeInBytes": 8088
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr20.txt",
+                        "sizeInBytes": 523567
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20-AFR-freq.tar.gz",
+                        "sizeInBytes": 276860
+                    }
+                ],
+                "avgCPU": 57.3813,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000064",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "20",
+                        "-pop",
+                        "AFR"
+                    ]
+                },
+                "runtimeInSeconds": 156.483
+            },
+            {
+                "name": "mutation_overlap_ID0000065",
+                "type": "compute",
+                "parents": [
+                    "individuals_merge_ID0000023",
+                    "sifting_ID0000024"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n.tar.gz",
+                        "sizeInBytes": 24570
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr20.txt",
+                        "sizeInBytes": 523567
+                    },
+                    {
+                        "link": "input",
+                        "name": "GBR",
+                        "sizeInBytes": 856
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20-GBR.tar.gz",
+                        "sizeInBytes": 139174
+                    }
+                ],
+                "avgCPU": 36.7061,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000065",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "20",
+                        "-pop",
+                        "GBR"
+                    ]
+                },
+                "runtimeInSeconds": 5.07
+            },
+            {
+                "name": "frequency_ID0000066",
+                "type": "compute",
+                "parents": [
+                    "individuals_merge_ID0000023",
+                    "sifting_ID0000024"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n.tar.gz",
+                        "sizeInBytes": 24570
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr20.txt",
+                        "sizeInBytes": 523567
+                    },
+                    {
+                        "link": "input",
+                        "name": "GBR",
+                        "sizeInBytes": 856
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20-GBR-freq.tar.gz",
+                        "sizeInBytes": 224999
+                    }
+                ],
+                "avgCPU": 55.4154,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000066",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "20",
+                        "-pop",
+                        "GBR"
+                    ]
+                },
+                "runtimeInSeconds": 165.667
+            },
+            {
+                "name": "mutation_overlap_ID0000067",
+                "type": "compute",
+                "parents": [
+                    "individuals_merge_ID0000023",
+                    "sifting_ID0000024"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL",
+                        "sizeInBytes": 28000
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n.tar.gz",
+                        "sizeInBytes": 24570
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr20.txt",
+                        "sizeInBytes": 523567
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20-ALL.tar.gz",
+                        "sizeInBytes": 169045
+                    }
+                ],
+                "avgCPU": 30.6411,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000067",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "20",
+                        "-pop",
+                        "ALL"
+                    ]
+                },
+                "runtimeInSeconds": 60.135
+            },
+            {
+                "name": "frequency_ID0000068",
+                "type": "compute",
+                "parents": [
+                    "individuals_merge_ID0000023",
+                    "sifting_ID0000024"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL",
+                        "sizeInBytes": 28000
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n.tar.gz",
+                        "sizeInBytes": 24570
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr20.txt",
+                        "sizeInBytes": 523567
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20-ALL-freq.tar.gz",
+                        "sizeInBytes": 287255
+                    }
+                ],
+                "avgCPU": 70.2268,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000068",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "20",
+                        "-pop",
+                        "ALL"
+                    ]
+                },
+                "runtimeInSeconds": 122.973
+            },
+            {
+                "name": "mutation_overlap_ID0000069",
+                "type": "compute",
+                "parents": [
+                    "individuals_merge_ID0000023",
+                    "sifting_ID0000024"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "chr20n.tar.gz",
+                        "sizeInBytes": 24570
+                    },
+                    {
+                        "link": "input",
+                        "name": "SAS",
+                        "sizeInBytes": 5248
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr20.txt",
+                        "sizeInBytes": 523567
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20-SAS.tar.gz",
+                        "sizeInBytes": 145822
+                    }
+                ],
+                "avgCPU": 58.4382,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000069",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "20",
+                        "-pop",
+                        "SAS"
+                    ]
+                },
+                "runtimeInSeconds": 5.404
+            },
+            {
+                "name": "frequency_ID0000070",
+                "type": "compute",
+                "parents": [
+                    "individuals_merge_ID0000023",
+                    "sifting_ID0000024"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "chr20n.tar.gz",
+                        "sizeInBytes": 24570
+                    },
+                    {
+                        "link": "input",
+                        "name": "SAS",
+                        "sizeInBytes": 5248
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr20.txt",
+                        "sizeInBytes": 523567
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20-SAS-freq.tar.gz",
+                        "sizeInBytes": 263314
+                    }
+                ],
+                "avgCPU": 68.575,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000070",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "20",
+                        "-pop",
+                        "SAS"
+                    ]
+                },
+                "runtimeInSeconds": 123.195
+            },
+            {
+                "name": "mutation_overlap_ID0000071",
+                "type": "compute",
+                "parents": [
+                    "individuals_merge_ID0000023",
+                    "sifting_ID0000024"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "EAS",
+                        "sizeInBytes": 4896
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n.tar.gz",
+                        "sizeInBytes": 24570
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr20.txt",
+                        "sizeInBytes": 523567
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20-EAS.tar.gz",
+                        "sizeInBytes": 145230
+                    }
+                ],
+                "avgCPU": 21.2633,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000071",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "20",
+                        "-pop",
+                        "EAS"
+                    ]
+                },
+                "runtimeInSeconds": 16.686
+            },
+            {
+                "name": "frequency_ID0000072",
+                "type": "compute",
+                "parents": [
+                    "individuals_merge_ID0000023",
+                    "sifting_ID0000024"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "EAS",
+                        "sizeInBytes": 4896
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n.tar.gz",
+                        "sizeInBytes": 24570
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr20.txt",
+                        "sizeInBytes": 523567
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20-EAS-freq.tar.gz",
+                        "sizeInBytes": 264831
+                    }
+                ],
+                "avgCPU": 72.0299,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000072",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "20",
+                        "-pop",
+                        "EAS"
+                    ]
+                },
+                "runtimeInSeconds": 116.689
+            },
+            {
+                "name": "mutation_overlap_ID0000073",
+                "type": "compute",
+                "parents": [
+                    "individuals_merge_ID0000023",
+                    "sifting_ID0000024"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "chr20n.tar.gz",
+                        "sizeInBytes": 24570
+                    },
+                    {
+                        "link": "input",
+                        "name": "AMR",
+                        "sizeInBytes": 4248
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr20.txt",
+                        "sizeInBytes": 523567
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20-AMR.tar.gz",
+                        "sizeInBytes": 145081
+                    }
+                ],
+                "avgCPU": 66.6413,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000073",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "20",
+                        "-pop",
+                        "AMR"
+                    ]
+                },
+                "runtimeInSeconds": 3.948
+            },
+            {
+                "name": "frequency_ID0000074",
+                "type": "compute",
+                "parents": [
+                    "individuals_merge_ID0000023",
+                    "sifting_ID0000024"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "chr20n.tar.gz",
+                        "sizeInBytes": 24570
+                    },
+                    {
+                        "link": "input",
+                        "name": "AMR",
+                        "sizeInBytes": 4248
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr20.txt",
+                        "sizeInBytes": 523567
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20-AMR-freq.tar.gz",
+                        "sizeInBytes": 258241
+                    }
+                ],
+                "avgCPU": 67.6415,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000074",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "20",
+                        "-pop",
+                        "AMR"
+                    ]
+                },
+                "runtimeInSeconds": 125.361
+            },
+            {
+                "name": "mutation_overlap_ID0000075",
+                "type": "compute",
+                "parents": [
+                    "individuals_merge_ID0000023",
+                    "sifting_ID0000024"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "EUR",
+                        "sizeInBytes": 5312
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n.tar.gz",
+                        "sizeInBytes": 24570
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr20.txt",
+                        "sizeInBytes": 523567
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20-EUR.tar.gz",
+                        "sizeInBytes": 144141
+                    }
+                ],
+                "avgCPU": 26.9683,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000075",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "20",
+                        "-pop",
+                        "EUR"
+                    ]
+                },
+                "runtimeInSeconds": 12.574
+            },
+            {
+                "name": "frequency_ID0000076",
+                "type": "compute",
+                "parents": [
+                    "individuals_merge_ID0000023",
+                    "sifting_ID0000024"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "EUR",
+                        "sizeInBytes": 5312
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr20n.tar.gz",
+                        "sizeInBytes": 24570
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr20.txt",
+                        "sizeInBytes": 523567
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr20-EUR-freq.tar.gz",
+                        "sizeInBytes": 271578
+                    }
+                ],
+                "avgCPU": 55.1988,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000076",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "20",
+                        "-pop",
+                        "EUR"
+                    ]
+                },
+                "runtimeInSeconds": 163.866
+            },
+            {
+                "name": "mutation_overlap_ID0000077",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000036",
+                    "individuals_merge_ID0000035"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "AFR",
+                        "sizeInBytes": 8088
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n.tar.gz",
+                        "sizeInBytes": 24538
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr21.txt",
+                        "sizeInBytes": 231958
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21-AFR.tar.gz",
+                        "sizeInBytes": 144568
+                    }
+                ],
+                "avgCPU": 14.8385,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000077",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "21",
+                        "-pop",
+                        "AFR"
+                    ]
+                },
+                "runtimeInSeconds": 28.143
+            },
+            {
+                "name": "frequency_ID0000078",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000036",
+                    "individuals_merge_ID0000035"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "AFR",
+                        "sizeInBytes": 8088
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n.tar.gz",
+                        "sizeInBytes": 24538
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr21.txt",
+                        "sizeInBytes": 231958
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21-AFR-freq.tar.gz",
+                        "sizeInBytes": 270043
+                    }
+                ],
+                "avgCPU": 99.4043,
+                "machine": "pegasus-2",
+                "priority": 40,
+                "id": "ID0000078",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "21",
+                        "-pop",
+                        "AFR"
+                    ]
+                },
+                "runtimeInSeconds": 79.741
+            },
+            {
+                "name": "mutation_overlap_ID0000079",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000036",
+                    "individuals_merge_ID0000035"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "GBR",
+                        "sizeInBytes": 856
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n.tar.gz",
+                        "sizeInBytes": 24538
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr21.txt",
+                        "sizeInBytes": 231958
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21-GBR.tar.gz",
+                        "sizeInBytes": 136910
+                    }
+                ],
+                "avgCPU": 87.7336,
+                "machine": "pegasus-2",
+                "priority": 40,
+                "id": "ID0000079",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "21",
+                        "-pop",
+                        "GBR"
+                    ]
+                },
+                "runtimeInSeconds": 2.087
+            },
+            {
+                "name": "frequency_ID0000080",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000036",
+                    "individuals_merge_ID0000035"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "GBR",
+                        "sizeInBytes": 856
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n.tar.gz",
+                        "sizeInBytes": 24538
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr21.txt",
+                        "sizeInBytes": 231958
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21-GBR-freq.tar.gz",
+                        "sizeInBytes": 219673
+                    }
+                ],
+                "avgCPU": 58.0667,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000080",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "21",
+                        "-pop",
+                        "GBR"
+                    ]
+                },
+                "runtimeInSeconds": 156.384
+            },
+            {
+                "name": "mutation_overlap_ID0000081",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000036",
+                    "individuals_merge_ID0000035"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL",
+                        "sizeInBytes": 28000
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n.tar.gz",
+                        "sizeInBytes": 24538
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr21.txt",
+                        "sizeInBytes": 231958
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21-ALL.tar.gz",
+                        "sizeInBytes": 166607
+                    }
+                ],
+                "avgCPU": 99.9941,
+                "machine": "pegasus-2",
+                "priority": 40,
+                "id": "ID0000081",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "21",
+                        "-pop",
+                        "ALL"
+                    ]
+                },
+                "runtimeInSeconds": 17.087
+            },
+            {
+                "name": "frequency_ID0000082",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000036",
+                    "individuals_merge_ID0000035"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL",
+                        "sizeInBytes": 28000
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n.tar.gz",
+                        "sizeInBytes": 24538
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr21.txt",
+                        "sizeInBytes": 231958
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21-ALL-freq.tar.gz",
+                        "sizeInBytes": 289459
+                    }
+                ],
+                "avgCPU": 61.0516,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000082",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "21",
+                        "-pop",
+                        "ALL"
+                    ]
+                },
+                "runtimeInSeconds": 150.001
+            },
+            {
+                "name": "mutation_overlap_ID0000083",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000036",
+                    "individuals_merge_ID0000035"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "SAS",
+                        "sizeInBytes": 5248
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n.tar.gz",
+                        "sizeInBytes": 24538
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr21.txt",
+                        "sizeInBytes": 231958
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21-SAS.tar.gz",
+                        "sizeInBytes": 143378
+                    }
+                ],
+                "avgCPU": 91.7796,
+                "machine": "pegasus-2",
+                "priority": 40,
+                "id": "ID0000083",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "21",
+                        "-pop",
+                        "SAS"
+                    ]
+                },
+                "runtimeInSeconds": 3.321
+            },
+            {
+                "name": "frequency_ID0000084",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000036",
+                    "individuals_merge_ID0000035"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "SAS",
+                        "sizeInBytes": 5248
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n.tar.gz",
+                        "sizeInBytes": 24538
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr21.txt",
+                        "sizeInBytes": 231958
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21-SAS-freq.tar.gz",
+                        "sizeInBytes": 264042
+                    }
+                ],
+                "avgCPU": 58.9082,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000084",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "21",
+                        "-pop",
+                        "SAS"
+                    ]
+                },
+                "runtimeInSeconds": 153.544
+            },
+            {
+                "name": "mutation_overlap_ID0000085",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000036",
+                    "individuals_merge_ID0000035"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "EAS",
+                        "sizeInBytes": 4896
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n.tar.gz",
+                        "sizeInBytes": 24538
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr21.txt",
+                        "sizeInBytes": 231958
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21-EAS.tar.gz",
+                        "sizeInBytes": 142607
+                    }
+                ],
+                "avgCPU": 19.3372,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000085",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "21",
+                        "-pop",
+                        "EAS"
+                    ]
+                },
+                "runtimeInSeconds": 18.679
+            },
+            {
+                "name": "frequency_ID0000086",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000036",
+                    "individuals_merge_ID0000035"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "EAS",
+                        "sizeInBytes": 4896
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n.tar.gz",
+                        "sizeInBytes": 24538
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr21.txt",
+                        "sizeInBytes": 231958
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21-EAS-freq.tar.gz",
+                        "sizeInBytes": 262667
+                    }
+                ],
+                "avgCPU": 99.3282,
+                "machine": "pegasus-2",
+                "priority": 40,
+                "id": "ID0000086",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "21",
+                        "-pop",
+                        "EAS"
+                    ]
+                },
+                "runtimeInSeconds": 80.386
+            },
+            {
+                "name": "mutation_overlap_ID0000087",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000036",
+                    "individuals_merge_ID0000035"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "AMR",
+                        "sizeInBytes": 4248
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n.tar.gz",
+                        "sizeInBytes": 24538
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr21.txt",
+                        "sizeInBytes": 231958
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21-AMR.tar.gz",
+                        "sizeInBytes": 142092
+                    }
+                ],
+                "avgCPU": 99.9601,
+                "machine": "pegasus-2",
+                "priority": 40,
+                "id": "ID0000087",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "21",
+                        "-pop",
+                        "AMR"
+                    ]
+                },
+                "runtimeInSeconds": 2.505
+            },
+            {
+                "name": "frequency_ID0000088",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000036",
+                    "individuals_merge_ID0000035"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "AMR",
+                        "sizeInBytes": 4248
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n.tar.gz",
+                        "sizeInBytes": 24538
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr21.txt",
+                        "sizeInBytes": 231958
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21-AMR-freq.tar.gz",
+                        "sizeInBytes": 256951
+                    }
+                ],
+                "avgCPU": 99.4713,
+                "machine": "pegasus-2",
+                "priority": 40,
+                "id": "ID0000088",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "21",
+                        "-pop",
+                        "AMR"
+                    ]
+                },
+                "runtimeInSeconds": 78.5
+            },
+            {
+                "name": "mutation_overlap_ID0000089",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000036",
+                    "individuals_merge_ID0000035"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "EUR",
+                        "sizeInBytes": 5312
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n.tar.gz",
+                        "sizeInBytes": 24538
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr21.txt",
+                        "sizeInBytes": 231958
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21-EUR.tar.gz",
+                        "sizeInBytes": 141838
+                    }
+                ],
+                "avgCPU": 88.4463,
+                "machine": "pegasus-2",
+                "priority": 40,
+                "id": "ID0000089",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "21",
+                        "-pop",
+                        "EUR"
+                    ]
+                },
+                "runtimeInSeconds": 3.289
+            },
+            {
+                "name": "frequency_ID0000090",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000036",
+                    "individuals_merge_ID0000035"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "EUR",
+                        "sizeInBytes": 5312
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21n.tar.gz",
+                        "sizeInBytes": 24538
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr21.txt",
+                        "sizeInBytes": 231958
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr21-EUR-freq.tar.gz",
+                        "sizeInBytes": 267182
+                    }
+                ],
+                "avgCPU": 63.5904,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000090",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "21",
+                        "-pop",
+                        "EUR"
+                    ]
+                },
+                "runtimeInSeconds": 142.229
+            },
+            {
+                "name": "mutation_overlap_ID0000091",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000048",
+                    "individuals_merge_ID0000047"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr22.txt",
+                        "sizeInBytes": 480587
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n.tar.gz",
+                        "sizeInBytes": 24492
+                    },
+                    {
+                        "link": "input",
+                        "name": "AFR",
+                        "sizeInBytes": 8088
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22-AFR.tar.gz",
+                        "sizeInBytes": 146441
+                    }
+                ],
+                "avgCPU": 35.7373,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000091",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "22",
+                        "-pop",
+                        "AFR"
+                    ]
+                },
+                "runtimeInSeconds": 11.176
+            },
+            {
+                "name": "frequency_ID0000092",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000048",
+                    "individuals_merge_ID0000047"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr22.txt",
+                        "sizeInBytes": 480587
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n.tar.gz",
+                        "sizeInBytes": 24492
+                    },
+                    {
+                        "link": "input",
+                        "name": "AFR",
+                        "sizeInBytes": 8088
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22-AFR-freq.tar.gz",
+                        "sizeInBytes": 276472
+                    }
+                ],
+                "avgCPU": 56.8106,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000092",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "22",
+                        "-pop",
+                        "AFR"
+                    ]
+                },
+                "runtimeInSeconds": 159.428
+            },
+            {
+                "name": "mutation_overlap_ID0000093",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000048",
+                    "individuals_merge_ID0000047"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr22.txt",
+                        "sizeInBytes": 480587
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n.tar.gz",
+                        "sizeInBytes": 24492
+                    },
+                    {
+                        "link": "input",
+                        "name": "GBR",
+                        "sizeInBytes": 856
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22-GBR.tar.gz",
+                        "sizeInBytes": 138731
+                    }
+                ],
+                "avgCPU": 39.1233,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000093",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "22",
+                        "-pop",
+                        "GBR"
+                    ]
+                },
+                "runtimeInSeconds": 4.882
+            },
+            {
+                "name": "frequency_ID0000094",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000048",
+                    "individuals_merge_ID0000047"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr22.txt",
+                        "sizeInBytes": 480587
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n.tar.gz",
+                        "sizeInBytes": 24492
+                    },
+                    {
+                        "link": "input",
+                        "name": "GBR",
+                        "sizeInBytes": 856
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22-GBR-freq.tar.gz",
+                        "sizeInBytes": 223244
+                    }
+                ],
+                "avgCPU": 58.0345,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000094",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "22",
+                        "-pop",
+                        "GBR"
+                    ]
+                },
+                "runtimeInSeconds": 155.616
+            },
+            {
+                "name": "mutation_overlap_ID0000095",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000048",
+                    "individuals_merge_ID0000047"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL",
+                        "sizeInBytes": 28000
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr22.txt",
+                        "sizeInBytes": 480587
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n.tar.gz",
+                        "sizeInBytes": 24492
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22-ALL.tar.gz",
+                        "sizeInBytes": 169314
+                    }
+                ],
+                "avgCPU": 42.4954,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000095",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "22",
+                        "-pop",
+                        "ALL"
+                    ]
+                },
+                "runtimeInSeconds": 42.807
+            },
+            {
+                "name": "frequency_ID0000096",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000048",
+                    "individuals_merge_ID0000047"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "ALL",
+                        "sizeInBytes": 28000
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr22.txt",
+                        "sizeInBytes": 480587
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n.tar.gz",
+                        "sizeInBytes": 24492
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22-ALL-freq.tar.gz",
+                        "sizeInBytes": 293318
+                    }
+                ],
+                "avgCPU": 58.5259,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000096",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "22",
+                        "-pop",
+                        "ALL"
+                    ]
+                },
+                "runtimeInSeconds": 156.394
+            },
+            {
+                "name": "mutation_overlap_ID0000097",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000048",
+                    "individuals_merge_ID0000047"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "SAS",
+                        "sizeInBytes": 5248
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr22.txt",
+                        "sizeInBytes": 480587
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n.tar.gz",
+                        "sizeInBytes": 24492
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22-SAS.tar.gz",
+                        "sizeInBytes": 145902
+                    }
+                ],
+                "avgCPU": 39.7175,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000097",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "22",
+                        "-pop",
+                        "SAS"
+                    ]
+                },
+                "runtimeInSeconds": 7.999
+            },
+            {
+                "name": "frequency_ID0000098",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000048",
+                    "individuals_merge_ID0000047"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "SAS",
+                        "sizeInBytes": 5248
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr22.txt",
+                        "sizeInBytes": 480587
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n.tar.gz",
+                        "sizeInBytes": 24492
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22-SAS-freq.tar.gz",
+                        "sizeInBytes": 267602
+                    }
+                ],
+                "avgCPU": 56.0515,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000098",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "22",
+                        "-pop",
+                        "SAS"
+                    ]
+                },
+                "runtimeInSeconds": 165.537
+            },
+            {
+                "name": "mutation_overlap_ID0000099",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000048",
+                    "individuals_merge_ID0000047"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "EAS",
+                        "sizeInBytes": 4896
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr22.txt",
+                        "sizeInBytes": 480587
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n.tar.gz",
+                        "sizeInBytes": 24492
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22-EAS.tar.gz",
+                        "sizeInBytes": 145147
+                    }
+                ],
+                "avgCPU": 42.4564,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000099",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "22",
+                        "-pop",
+                        "EAS"
+                    ]
+                },
+                "runtimeInSeconds": 7.735
+            },
+            {
+                "name": "frequency_ID0000100",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000048",
+                    "individuals_merge_ID0000047"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "EAS",
+                        "sizeInBytes": 4896
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr22.txt",
+                        "sizeInBytes": 480587
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n.tar.gz",
+                        "sizeInBytes": 24492
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22-EAS-freq.tar.gz",
+                        "sizeInBytes": 268890
+                    }
+                ],
+                "avgCPU": 63.3054,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000100",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "22",
+                        "-pop",
+                        "EAS"
+                    ]
+                },
+                "runtimeInSeconds": 142.484
+            },
+            {
+                "name": "mutation_overlap_ID0000101",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000048",
+                    "individuals_merge_ID0000047"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "AMR",
+                        "sizeInBytes": 4248
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr22.txt",
+                        "sizeInBytes": 480587
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n.tar.gz",
+                        "sizeInBytes": 24492
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22-AMR.tar.gz",
+                        "sizeInBytes": 144354
+                    }
+                ],
+                "avgCPU": 34.6768,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000101",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "22",
+                        "-pop",
+                        "AMR"
+                    ]
+                },
+                "runtimeInSeconds": 7.89
+            },
+            {
+                "name": "frequency_ID0000102",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000048",
+                    "individuals_merge_ID0000047"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "AMR",
+                        "sizeInBytes": 4248
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr22.txt",
+                        "sizeInBytes": 480587
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n.tar.gz",
+                        "sizeInBytes": 24492
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22-AMR-freq.tar.gz",
+                        "sizeInBytes": 262773
+                    }
+                ],
+                "avgCPU": 58.4623,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000102",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "22",
+                        "-pop",
+                        "AMR"
+                    ]
+                },
+                "runtimeInSeconds": 157.363
+            },
+            {
+                "name": "mutation_overlap_ID0000103",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000048",
+                    "individuals_merge_ID0000047"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "EUR",
+                        "sizeInBytes": 5312
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr22.txt",
+                        "sizeInBytes": 480587
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n.tar.gz",
+                        "sizeInBytes": 24492
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22-EUR.tar.gz",
+                        "sizeInBytes": 143822
+                    }
+                ],
+                "avgCPU": 28.6,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000103",
+                "category": "mutation_overlap",
+                "command": {
+                    "program": "mutation_overlap",
+                    "arguments": [
+                        "-c",
+                        "22",
+                        "-pop",
+                        "EUR"
+                    ]
+                },
+                "runtimeInSeconds": 11.5
+            },
+            {
+                "name": "frequency_ID0000104",
+                "type": "compute",
+                "parents": [
+                    "sifting_ID0000048",
+                    "individuals_merge_ID0000047"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "EUR",
+                        "sizeInBytes": 5312
+                    },
+                    {
+                        "link": "input",
+                        "name": "sifted.SIFT.chr22.txt",
+                        "sizeInBytes": 480587
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr22n.tar.gz",
+                        "sizeInBytes": 24492
+                    },
+                    {
+                        "link": "input",
+                        "name": "columns.txt",
+                        "sizeInBytes": 20078
+                    },
+                    {
+                        "link": "output",
+                        "name": "chr22-EUR-freq.tar.gz",
+                        "sizeInBytes": 270689
+                    }
+                ],
+                "avgCPU": 57.7626,
+                "machine": "pegasus-5",
+                "priority": 40,
+                "id": "ID0000104",
+                "category": "frequency",
+                "command": {
+                    "program": "frequency",
+                    "arguments": [
+                        "-c",
+                        "22",
+                        "-pop",
+                        "EUR"
+                    ]
+                },
+                "runtimeInSeconds": 159.212
+            }
+        ],
+        "makespanInSeconds": 1391.0
+    }
+}

@@ -1,0 +1,25 @@
+dags:
+  - dags/wfinstances
+dag_parser:
+  reference_speed: 10
+  ignore_memory: true
+systems:
+  - systems
+data_transfer_mode: Direct
+schedulers:
+  - DynamicList[task=CompSize,resource=Speed]
+  - DynamicList[task=CompSize,resource=TaskData]
+  - DynamicList[task=CompSize,resource=MaxAvailableCores]
+  - DynamicList[task=DataSize,resource=Speed]
+  - DynamicList[task=DataSize,resource=TaskData]
+  - DynamicList[task=DataSize,resource=MaxAvailableCores]
+  - DynamicList[task=ChildrenCount,resource=Speed]
+  - DynamicList[task=ChildrenCount,resource=TaskData]
+  - DynamicList[task=ChildrenCount,resource=MaxAvailableCores]
+  - DynamicList[task=BottomLevel,resource=Speed]
+  - DynamicList[task=BottomLevel,resource=TaskData]
+  - DynamicList[task=BottomLevel,resource=MaxAvailableCores]
+  - DLS
+  - HEFT
+  - Lookahead
+  - PEFT

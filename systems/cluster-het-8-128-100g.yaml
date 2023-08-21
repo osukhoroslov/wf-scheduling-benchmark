@@ -1,0 +1,37 @@
+resources:
+  - name: node1
+    speed: 6
+    cores: 8
+    memory: 16000
+  - name: node2
+    speed: 4.77
+    cores: 8
+    memory: 16000
+  - name: node3
+    speed: 4.67
+    cores: 16
+    memory: 32000
+  - name: node4
+    speed: 4.57
+    cores: 24
+    memory: 48000
+  - name: node5
+    speed: 3.65
+    cores: 16
+    memory: 32000
+  - name: node6
+    speed: 3.53
+    cores: 24
+    memory: 48000
+  - name: node7
+    speed: 3.43
+    cores: 24
+    memory: 48000
+  - name: node8
+    speed: 2.0
+    cores: 8
+    memory: 16000
+network:
+  model: ConstantBandwidth
+  bandwidth: 12500
+  latency: 100

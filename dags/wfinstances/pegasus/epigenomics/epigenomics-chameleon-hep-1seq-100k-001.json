@@ -1,0 +1,1862 @@
+{
+    "name": "genome-dax-0",
+    "description": "Trace generated with wrench-pegasus-parser.py from http://wrench-project.org",
+    "createdAt": "2020-04-08T12:58:46.286994Z",
+    "schemaVersion": "1.4",
+    "wms": {
+        "url": "http://pegasus.isi.edu",
+        "version": "4.9.3",
+        "name": "Pegasus"
+    },
+    "author": {
+        "name": "rafsilva",
+        "email": "support@wrench-project.org"
+    },
+    "workflow": {
+        "machines": [
+            {
+                "nodeName": "compute-3",
+                "system": "linux",
+                "architecture": "x86_64",
+                "release": "4.15.0-91-generic",
+                "cpu": {
+                    "count": 48,
+                    "vendor": "GenuineIntel",
+                    "speed": 1202
+                },
+                "memoryInBytes": 131795984000
+            }
+        ],
+        "executedAt": "20200408T154143+0000",
+        "tasks": [
+            {
+                "name": "chr21_chr21_ID0000001",
+                "type": "compute",
+                "parents": [
+                    "mapMerge_mapMerge_HEP2_MSP1_Digests_ID0000021"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests.nocontam.map",
+                        "sizeInBytes": 8974436
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests.nocontam.chr21.map",
+                        "sizeInBytes": 8974436
+                    }
+                ],
+                "avgCPU": 95.5299,
+                "machine": "compute-3",
+                "priority": 90,
+                "id": "ID0000001",
+                "category": "chr21",
+                "command": {
+                    "program": "chr21",
+                    "arguments": [
+                        "-b",
+                        "HEP2_MSP1_Digests.nocontam.map",
+                        "chr21",
+                        "chr21.rev",
+                        "HEP2_MSP1_Digests.nocontam.chr21.map"
+                    ]
+                },
+                "runtimeInSeconds": 2.774
+            },
+            {
+                "name": "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_1_ID0000002",
+                "type": "compute",
+                "parents": [
+                    "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_1_ID0000033"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.1.nocontam.fq",
+                        "sizeInBytes": 9652233
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.1.nocontam.bfq",
+                        "sizeInBytes": 2377096
+                    }
+                ],
+                "avgCPU": 100.0,
+                "machine": "compute-3",
+                "priority": 50,
+                "id": "ID0000002",
+                "category": "fast2bfq",
+                "command": {
+                    "program": "fast2bfq",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.1.nocontam.fq",
+                        "HEP2_MSP1_Digests_s_1_sequence.1.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.543
+            },
+            {
+                "name": "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_2_ID0000003",
+                "type": "compute",
+                "parents": [
+                    "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_2_ID0000034"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.2.nocontam.fq",
+                        "sizeInBytes": 9701398
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.2.nocontam.bfq",
+                        "sizeInBytes": 2323926
+                    }
+                ],
+                "avgCPU": 96.3303,
+                "machine": "compute-3",
+                "priority": 50,
+                "id": "ID0000003",
+                "category": "fast2bfq",
+                "command": {
+                    "program": "fast2bfq",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.2.nocontam.fq",
+                        "HEP2_MSP1_Digests_s_1_sequence.2.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.545
+            },
+            {
+                "name": "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_3_ID0000004",
+                "type": "compute",
+                "parents": [
+                    "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_3_ID0000035"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.3.nocontam.fq",
+                        "sizeInBytes": 9735565
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.3.nocontam.bfq",
+                        "sizeInBytes": 2277409
+                    }
+                ],
+                "avgCPU": 78.1659,
+                "machine": "compute-3",
+                "priority": 50,
+                "id": "ID0000004",
+                "category": "fast2bfq",
+                "command": {
+                    "program": "fast2bfq",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.3.nocontam.fq",
+                        "HEP2_MSP1_Digests_s_1_sequence.3.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.687
+            },
+            {
+                "name": "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_4_ID0000005",
+                "type": "compute",
+                "parents": [
+                    "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_4_ID0000036"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.4.nocontam.fq",
+                        "sizeInBytes": 9901201
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.4.nocontam.bfq",
+                        "sizeInBytes": 2286437
+                    }
+                ],
+                "avgCPU": 86.4734,
+                "machine": "compute-3",
+                "priority": 50,
+                "id": "ID0000005",
+                "category": "fast2bfq",
+                "command": {
+                    "program": "fast2bfq",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.4.nocontam.fq",
+                        "HEP2_MSP1_Digests_s_1_sequence.4.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.621
+            },
+            {
+                "name": "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_5_ID0000006",
+                "type": "compute",
+                "parents": [
+                    "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_5_ID0000037"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.5.nocontam.fq",
+                        "sizeInBytes": 9887845
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.5.nocontam.bfq",
+                        "sizeInBytes": 2353768
+                    }
+                ],
+                "avgCPU": 91.6667,
+                "machine": "compute-3",
+                "priority": 50,
+                "id": "ID0000006",
+                "category": "fast2bfq",
+                "command": {
+                    "program": "fast2bfq",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.5.nocontam.fq",
+                        "HEP2_MSP1_Digests_s_1_sequence.5.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.612
+            },
+            {
+                "name": "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_6_ID0000007",
+                "type": "compute",
+                "parents": [
+                    "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_6_ID0000038"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.6.nocontam.fq",
+                        "sizeInBytes": 9878684
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.6.nocontam.bfq",
+                        "sizeInBytes": 2402011
+                    }
+                ],
+                "avgCPU": 100.0,
+                "machine": "compute-3",
+                "priority": 50,
+                "id": "ID0000007",
+                "category": "fast2bfq",
+                "command": {
+                    "program": "fast2bfq",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.6.nocontam.fq",
+                        "HEP2_MSP1_Digests_s_1_sequence.6.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.538
+            },
+            {
+                "name": "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_7_ID0000008",
+                "type": "compute",
+                "parents": [
+                    "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_7_ID0000039"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.7.nocontam.fq",
+                        "sizeInBytes": 9774849
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.7.nocontam.bfq",
+                        "sizeInBytes": 2284671
+                    }
+                ],
+                "avgCPU": 100.0,
+                "machine": "compute-3",
+                "priority": 50,
+                "id": "ID0000008",
+                "category": "fast2bfq",
+                "command": {
+                    "program": "fast2bfq",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.7.nocontam.fq",
+                        "HEP2_MSP1_Digests_s_1_sequence.7.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.531
+            },
+            {
+                "name": "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_8_ID0000009",
+                "type": "compute",
+                "parents": [
+                    "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_8_ID0000040"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.8.nocontam.fq",
+                        "sizeInBytes": 9772940
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.8.nocontam.bfq",
+                        "sizeInBytes": 2193189
+                    }
+                ],
+                "avgCPU": 66.7063,
+                "machine": "compute-3",
+                "priority": 50,
+                "id": "ID0000009",
+                "category": "fast2bfq",
+                "command": {
+                    "program": "fast2bfq",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.8.nocontam.fq",
+                        "HEP2_MSP1_Digests_s_1_sequence.8.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.841
+            },
+            {
+                "name": "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_9_ID0000010",
+                "type": "compute",
+                "parents": [
+                    "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_9_ID0000041"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.9.nocontam.fq",
+                        "sizeInBytes": 3397227
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.9.nocontam.bfq",
+                        "sizeInBytes": 755757
+                    }
+                ],
+                "avgCPU": 100.0,
+                "machine": "compute-3",
+                "priority": 50,
+                "id": "ID0000010",
+                "category": "fast2bfq",
+                "command": {
+                    "program": "fast2bfq",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.9.nocontam.fq",
+                        "HEP2_MSP1_Digests_s_1_sequence.9.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.237
+            },
+            {
+                "name": "fastqSplit_fastqSplit_HEP2_MSP1_Digests_s_1_sequence_ID0000011",
+                "type": "compute",
+                "parents": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.sfq",
+                        "sizeInBytes": 109431824
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.1.sfq",
+                        "sizeInBytes": 12939188
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.2.sfq",
+                        "sizeInBytes": 12988842
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.3.sfq",
+                        "sizeInBytes": 13047226
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.4.sfq",
+                        "sizeInBytes": 13174232
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.5.sfq",
+                        "sizeInBytes": 13175800
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.6.sfq",
+                        "sizeInBytes": 13175488
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.7.sfq",
+                        "sizeInBytes": 13173552
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.8.sfq",
+                        "sizeInBytes": 13172138
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.9.sfq",
+                        "sizeInBytes": 4585358
+                    }
+                ],
+                "avgCPU": 100.0,
+                "machine": "compute-3",
+                "priority": 20,
+                "id": "ID0000011",
+                "category": "fastqSplit",
+                "command": {
+                    "program": "fastqSplit",
+                    "arguments": [
+                        "100000",
+                        "HEP2_MSP1_Digests_s_1_sequence.sfq"
+                    ]
+                },
+                "runtimeInSeconds": 1.345
+            },
+            {
+                "name": "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_1_ID0000012",
+                "type": "compute",
+                "parents": [
+                    "fastqSplit_fastqSplit_HEP2_MSP1_Digests_s_1_sequence_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.1.sfq",
+                        "sizeInBytes": 12939188
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.1.nocontam.sfq",
+                        "sizeInBytes": 12527346
+                    }
+                ],
+                "avgCPU": 100.0,
+                "machine": "compute-3",
+                "priority": 30,
+                "id": "ID0000012",
+                "category": "filterContams",
+                "command": {
+                    "program": "filterContams",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.1.sfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.691
+            },
+            {
+                "name": "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_2_ID0000013",
+                "type": "compute",
+                "parents": [
+                    "fastqSplit_fastqSplit_HEP2_MSP1_Digests_s_1_sequence_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.2.sfq",
+                        "sizeInBytes": 12988842
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.2.nocontam.sfq",
+                        "sizeInBytes": 12608036
+                    }
+                ],
+                "avgCPU": 100.0,
+                "machine": "compute-3",
+                "priority": 30,
+                "id": "ID0000013",
+                "category": "filterContams",
+                "command": {
+                    "program": "filterContams",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.2.sfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.688
+            },
+            {
+                "name": "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_3_ID0000014",
+                "type": "compute",
+                "parents": [
+                    "fastqSplit_fastqSplit_HEP2_MSP1_Digests_s_1_sequence_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.3.sfq",
+                        "sizeInBytes": 13047226
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.3.nocontam.sfq",
+                        "sizeInBytes": 12672660
+                    }
+                ],
+                "avgCPU": 99.8575,
+                "machine": "compute-3",
+                "priority": 30,
+                "id": "ID0000014",
+                "category": "filterContams",
+                "command": {
+                    "program": "filterContams",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.3.sfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.702
+            },
+            {
+                "name": "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_4_ID0000015",
+                "type": "compute",
+                "parents": [
+                    "fastqSplit_fastqSplit_HEP2_MSP1_Digests_s_1_sequence_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.4.sfq",
+                        "sizeInBytes": 13174232
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.4.nocontam.sfq",
+                        "sizeInBytes": 12931412
+                    }
+                ],
+                "avgCPU": 100.0,
+                "machine": "compute-3",
+                "priority": 30,
+                "id": "ID0000015",
+                "category": "filterContams",
+                "command": {
+                    "program": "filterContams",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.4.sfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.692
+            },
+            {
+                "name": "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_5_ID0000016",
+                "type": "compute",
+                "parents": [
+                    "fastqSplit_fastqSplit_HEP2_MSP1_Digests_s_1_sequence_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.5.sfq",
+                        "sizeInBytes": 13175800
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.5.nocontam.sfq",
+                        "sizeInBytes": 12914500
+                    }
+                ],
+                "avgCPU": 100.0,
+                "machine": "compute-3",
+                "priority": 30,
+                "id": "ID0000016",
+                "category": "filterContams",
+                "command": {
+                    "program": "filterContams",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.5.sfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.689
+            },
+            {
+                "name": "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_6_ID0000017",
+                "type": "compute",
+                "parents": [
+                    "fastqSplit_fastqSplit_HEP2_MSP1_Digests_s_1_sequence_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.6.sfq",
+                        "sizeInBytes": 13175488
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.6.nocontam.sfq",
+                        "sizeInBytes": 12902408
+                    }
+                ],
+                "avgCPU": 99.8553,
+                "machine": "compute-3",
+                "priority": 30,
+                "id": "ID0000017",
+                "category": "filterContams",
+                "command": {
+                    "program": "filterContams",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.6.sfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.691
+            },
+            {
+                "name": "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_7_ID0000018",
+                "type": "compute",
+                "parents": [
+                    "fastqSplit_fastqSplit_HEP2_MSP1_Digests_s_1_sequence_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.7.sfq",
+                        "sizeInBytes": 13173552
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.7.nocontam.sfq",
+                        "sizeInBytes": 12766068
+                    }
+                ],
+                "avgCPU": 100.0,
+                "machine": "compute-3",
+                "priority": 30,
+                "id": "ID0000018",
+                "category": "filterContams",
+                "command": {
+                    "program": "filterContams",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.7.sfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.691
+            },
+            {
+                "name": "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_8_ID0000019",
+                "type": "compute",
+                "parents": [
+                    "fastqSplit_fastqSplit_HEP2_MSP1_Digests_s_1_sequence_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.8.sfq",
+                        "sizeInBytes": 13172138
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.8.nocontam.sfq",
+                        "sizeInBytes": 12763090
+                    }
+                ],
+                "avgCPU": 61.7958,
+                "machine": "compute-3",
+                "priority": 30,
+                "id": "ID0000019",
+                "category": "filterContams",
+                "command": {
+                    "program": "filterContams",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.8.sfq"
+                    ]
+                },
+                "runtimeInSeconds": 1.136
+            },
+            {
+                "name": "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_9_ID0000020",
+                "type": "compute",
+                "parents": [
+                    "fastqSplit_fastqSplit_HEP2_MSP1_Digests_s_1_sequence_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.9.sfq",
+                        "sizeInBytes": 4585358
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.9.nocontam.sfq",
+                        "sizeInBytes": 4436434
+                    }
+                ],
+                "avgCPU": 57.9767,
+                "machine": "compute-3",
+                "priority": 30,
+                "id": "ID0000020",
+                "category": "filterContams",
+                "command": {
+                    "program": "filterContams",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.9.sfq"
+                    ]
+                },
+                "runtimeInSeconds": 0.514
+            },
+            {
+                "name": "mapMerge_mapMerge_HEP2_MSP1_Digests_ID0000021",
+                "type": "compute",
+                "parents": [
+                    "mapMerge_mapMerge_HEP2_MSP1_Digests_s_1_sequence_ID0000022"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests.nocontam.map",
+                        "sizeInBytes": 8974436
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.nocontam.map",
+                        "sizeInBytes": 8974436
+                    }
+                ],
+                "avgCPU": 56.0899,
+                "machine": "compute-3",
+                "priority": 80,
+                "id": "ID0000021",
+                "category": "mapMerge",
+                "command": {
+                    "program": "mapMerge",
+                    "arguments": [
+                        "HEP2_MSP1_Digests.nocontam.map",
+                        "HEP2_MSP1_Digests_s_1_sequence.nocontam.map"
+                    ]
+                },
+                "runtimeInSeconds": 3.202
+            },
+            {
+                "name": "mapMerge_mapMerge_HEP2_MSP1_Digests_s_1_sequence_ID0000022",
+                "type": "compute",
+                "parents": [
+                    "map_map_HEP2_MSP1_Digests_s_1_sequence_7_ID0000029",
+                    "map_map_HEP2_MSP1_Digests_s_1_sequence_6_ID0000028",
+                    "map_map_HEP2_MSP1_Digests_s_1_sequence_9_ID0000031",
+                    "map_map_HEP2_MSP1_Digests_s_1_sequence_8_ID0000030",
+                    "map_map_HEP2_MSP1_Digests_s_1_sequence_3_ID0000025",
+                    "map_map_HEP2_MSP1_Digests_s_1_sequence_2_ID0000024",
+                    "map_map_HEP2_MSP1_Digests_s_1_sequence_5_ID0000027",
+                    "map_map_HEP2_MSP1_Digests_s_1_sequence_4_ID0000026",
+                    "map_map_HEP2_MSP1_Digests_s_1_sequence_1_ID0000023"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.nocontam.map",
+                        "sizeInBytes": 8974436
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.1.nocontam.map",
+                        "sizeInBytes": 1255491
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.2.nocontam.map",
+                        "sizeInBytes": 1170640
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.3.nocontam.map",
+                        "sizeInBytes": 1119402
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.4.nocontam.map",
+                        "sizeInBytes": 1082144
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.5.nocontam.map",
+                        "sizeInBytes": 1156862
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.6.nocontam.map",
+                        "sizeInBytes": 1236978
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.7.nocontam.map",
+                        "sizeInBytes": 1104747
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.8.nocontam.map",
+                        "sizeInBytes": 1009647
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.9.nocontam.map",
+                        "sizeInBytes": 354473
+                    }
+                ],
+                "avgCPU": 30.016,
+                "machine": "compute-3",
+                "priority": 70,
+                "id": "ID0000022",
+                "category": "mapMerge",
+                "command": {
+                    "program": "mapMerge",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.nocontam.map",
+                        "HEP2_MSP1_Digests_s_1_sequence.1.nocontam.map",
+                        "HEP2_MSP1_Digests_s_1_sequence.2.nocontam.map",
+                        "HEP2_MSP1_Digests_s_1_sequence.3.nocontam.map",
+                        "HEP2_MSP1_Digests_s_1_sequence.4.nocontam.map",
+                        "HEP2_MSP1_Digests_s_1_sequence.5.nocontam.map",
+                        "HEP2_MSP1_Digests_s_1_sequence.6.nocontam.map",
+                        "HEP2_MSP1_Digests_s_1_sequence.7.nocontam.map",
+                        "HEP2_MSP1_Digests_s_1_sequence.8.nocontam.map",
+                        "HEP2_MSP1_Digests_s_1_sequence.9.nocontam.map"
+                    ]
+                },
+                "runtimeInSeconds": 5.637
+            },
+            {
+                "name": "map_map_HEP2_MSP1_Digests_s_1_sequence_1_ID0000023",
+                "type": "compute",
+                "parents": [
+                    "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_1_ID0000002"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.1.nocontam.bfq",
+                        "sizeInBytes": 2377096
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21.BS.bfa",
+                        "sizeInBytes": 46944392
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.1.nocontam.map",
+                        "sizeInBytes": 1255491
+                    }
+                ],
+                "avgCPU": 98.5867,
+                "machine": "compute-3",
+                "priority": 60,
+                "id": "ID0000023",
+                "category": "map",
+                "command": {
+                    "program": "map",
+                    "arguments": [
+                        "-n",
+                        "2",
+                        "-M",
+                        "c",
+                        "-1",
+                        "32",
+                        "HEP2_MSP1_Digests_s_1_sequence.1.nocontam.map",
+                        "chr21.BS.bfa",
+                        "HEP2_MSP1_Digests_s_1_sequence.1.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 59.718
+            },
+            {
+                "name": "map_map_HEP2_MSP1_Digests_s_1_sequence_2_ID0000024",
+                "type": "compute",
+                "parents": [
+                    "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_2_ID0000003"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.2.nocontam.bfq",
+                        "sizeInBytes": 2323926
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21.BS.bfa",
+                        "sizeInBytes": 46944392
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.2.nocontam.map",
+                        "sizeInBytes": 1170640
+                    }
+                ],
+                "avgCPU": 99.1759,
+                "machine": "compute-3",
+                "priority": 60,
+                "id": "ID0000024",
+                "category": "map",
+                "command": {
+                    "program": "map",
+                    "arguments": [
+                        "-n",
+                        "2",
+                        "-M",
+                        "c",
+                        "-1",
+                        "32",
+                        "HEP2_MSP1_Digests_s_1_sequence.2.nocontam.map",
+                        "chr21.BS.bfa",
+                        "HEP2_MSP1_Digests_s_1_sequence.2.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 50.967
+            },
+            {
+                "name": "map_map_HEP2_MSP1_Digests_s_1_sequence_3_ID0000025",
+                "type": "compute",
+                "parents": [
+                    "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_3_ID0000004"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.3.nocontam.bfq",
+                        "sizeInBytes": 2277409
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21.BS.bfa",
+                        "sizeInBytes": 46944392
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.3.nocontam.map",
+                        "sizeInBytes": 1119402
+                    }
+                ],
+                "avgCPU": 97.674,
+                "machine": "compute-3",
+                "priority": 60,
+                "id": "ID0000025",
+                "category": "map",
+                "command": {
+                    "program": "map",
+                    "arguments": [
+                        "-n",
+                        "2",
+                        "-M",
+                        "c",
+                        "-1",
+                        "32",
+                        "HEP2_MSP1_Digests_s_1_sequence.3.nocontam.map",
+                        "chr21.BS.bfa",
+                        "HEP2_MSP1_Digests_s_1_sequence.3.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 54.815
+            },
+            {
+                "name": "map_map_HEP2_MSP1_Digests_s_1_sequence_4_ID0000026",
+                "type": "compute",
+                "parents": [
+                    "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_4_ID0000005"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.4.nocontam.bfq",
+                        "sizeInBytes": 2286437
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21.BS.bfa",
+                        "sizeInBytes": 46944392
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.4.nocontam.map",
+                        "sizeInBytes": 1082144
+                    }
+                ],
+                "avgCPU": 98.9729,
+                "machine": "compute-3",
+                "priority": 60,
+                "id": "ID0000026",
+                "category": "map",
+                "command": {
+                    "program": "map",
+                    "arguments": [
+                        "-n",
+                        "2",
+                        "-M",
+                        "c",
+                        "-1",
+                        "32",
+                        "HEP2_MSP1_Digests_s_1_sequence.4.nocontam.map",
+                        "chr21.BS.bfa",
+                        "HEP2_MSP1_Digests_s_1_sequence.4.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 58.22
+            },
+            {
+                "name": "map_map_HEP2_MSP1_Digests_s_1_sequence_5_ID0000027",
+                "type": "compute",
+                "parents": [
+                    "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_5_ID0000006"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.5.nocontam.bfq",
+                        "sizeInBytes": 2353768
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21.BS.bfa",
+                        "sizeInBytes": 46944392
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.5.nocontam.map",
+                        "sizeInBytes": 1156862
+                    }
+                ],
+                "avgCPU": 98.9789,
+                "machine": "compute-3",
+                "priority": 60,
+                "id": "ID0000027",
+                "category": "map",
+                "command": {
+                    "program": "map",
+                    "arguments": [
+                        "-n",
+                        "2",
+                        "-M",
+                        "c",
+                        "-1",
+                        "32",
+                        "HEP2_MSP1_Digests_s_1_sequence.5.nocontam.map",
+                        "chr21.BS.bfa",
+                        "HEP2_MSP1_Digests_s_1_sequence.5.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 57.489
+            },
+            {
+                "name": "map_map_HEP2_MSP1_Digests_s_1_sequence_6_ID0000028",
+                "type": "compute",
+                "parents": [
+                    "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_6_ID0000007"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.6.nocontam.bfq",
+                        "sizeInBytes": 2402011
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21.BS.bfa",
+                        "sizeInBytes": 46944392
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.6.nocontam.map",
+                        "sizeInBytes": 1236978
+                    }
+                ],
+                "avgCPU": 99.1127,
+                "machine": "compute-3",
+                "priority": 60,
+                "id": "ID0000028",
+                "category": "map",
+                "command": {
+                    "program": "map",
+                    "arguments": [
+                        "-n",
+                        "2",
+                        "-M",
+                        "c",
+                        "-1",
+                        "32",
+                        "HEP2_MSP1_Digests_s_1_sequence.6.nocontam.map",
+                        "chr21.BS.bfa",
+                        "HEP2_MSP1_Digests_s_1_sequence.6.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 57.029
+            },
+            {
+                "name": "map_map_HEP2_MSP1_Digests_s_1_sequence_7_ID0000029",
+                "type": "compute",
+                "parents": [
+                    "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_7_ID0000008"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.7.nocontam.bfq",
+                        "sizeInBytes": 2284671
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21.BS.bfa",
+                        "sizeInBytes": 46944392
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.7.nocontam.map",
+                        "sizeInBytes": 1104747
+                    }
+                ],
+                "avgCPU": 99.0544,
+                "machine": "compute-3",
+                "priority": 60,
+                "id": "ID0000029",
+                "category": "map",
+                "command": {
+                    "program": "map",
+                    "arguments": [
+                        "-n",
+                        "2",
+                        "-M",
+                        "c",
+                        "-1",
+                        "32",
+                        "HEP2_MSP1_Digests_s_1_sequence.7.nocontam.map",
+                        "chr21.BS.bfa",
+                        "HEP2_MSP1_Digests_s_1_sequence.7.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 56.157
+            },
+            {
+                "name": "map_map_HEP2_MSP1_Digests_s_1_sequence_8_ID0000030",
+                "type": "compute",
+                "parents": [
+                    "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_8_ID0000009"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.8.nocontam.bfq",
+                        "sizeInBytes": 2193189
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21.BS.bfa",
+                        "sizeInBytes": 46944392
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.8.nocontam.map",
+                        "sizeInBytes": 1009647
+                    }
+                ],
+                "avgCPU": 96.7975,
+                "machine": "compute-3",
+                "priority": 60,
+                "id": "ID0000030",
+                "category": "map",
+                "command": {
+                    "program": "map",
+                    "arguments": [
+                        "-n",
+                        "2",
+                        "-M",
+                        "c",
+                        "-1",
+                        "32",
+                        "HEP2_MSP1_Digests_s_1_sequence.8.nocontam.map",
+                        "chr21.BS.bfa",
+                        "HEP2_MSP1_Digests_s_1_sequence.8.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 52.271
+            },
+            {
+                "name": "map_map_HEP2_MSP1_Digests_s_1_sequence_9_ID0000031",
+                "type": "compute",
+                "parents": [
+                    "fast2bfq_fast2bfq_HEP2_MSP1_Digests_s_1_sequence_9_ID0000010"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.9.nocontam.bfq",
+                        "sizeInBytes": 755757
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21.BS.bfa",
+                        "sizeInBytes": 46944392
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.9.nocontam.map",
+                        "sizeInBytes": 354473
+                    }
+                ],
+                "avgCPU": 98.7605,
+                "machine": "compute-3",
+                "priority": 60,
+                "id": "ID0000031",
+                "category": "map",
+                "command": {
+                    "program": "map",
+                    "arguments": [
+                        "-n",
+                        "2",
+                        "-M",
+                        "c",
+                        "-1",
+                        "32",
+                        "HEP2_MSP1_Digests_s_1_sequence.9.nocontam.map",
+                        "chr21.BS.bfa",
+                        "HEP2_MSP1_Digests_s_1_sequence.9.nocontam.bfq"
+                    ]
+                },
+                "runtimeInSeconds": 33.964
+            },
+            {
+                "name": "pileup_pileup_ID0000032",
+                "type": "compute",
+                "parents": [
+                    "chr21_chr21_ID0000001"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests.nocontam.chr21.map",
+                        "sizeInBytes": 8974436
+                    },
+                    {
+                        "link": "input",
+                        "name": "chr21.BSnull.bfa",
+                        "sizeInBytes": 46944392
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests.nocontam.pileup",
+                        "sizeInBytes": 6924527
+                    }
+                ],
+                "avgCPU": 180.5963,
+                "machine": "compute-3",
+                "priority": 100,
+                "id": "ID0000032",
+                "category": "pileup",
+                "command": {
+                    "program": "pileup",
+                    "arguments": [
+                        "HEP2_MSP1_Digests.nocontam.pileup",
+                        "-q",
+                        "30",
+                        "-P",
+                        "chr21.BSnull.bfa",
+                        "HEP2_MSP1_Digests.nocontam.chr21.map"
+                    ]
+                },
+                "runtimeInSeconds": 30.52
+            },
+            {
+                "name": "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_1_ID0000033",
+                "type": "compute",
+                "parents": [
+                    "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_1_ID0000012"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.1.nocontam.sfq",
+                        "sizeInBytes": 12527346
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.1.nocontam.fq",
+                        "sizeInBytes": 9652233
+                    }
+                ],
+                "avgCPU": 40.8163,
+                "machine": "compute-3",
+                "priority": 40,
+                "id": "ID0000033",
+                "category": "sol2sanger",
+                "command": {
+                    "program": "sol2sanger",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.1.nocontam.sfq",
+                        "HEP2_MSP1_Digests_s_1_sequence.1.nocontam.fq"
+                    ]
+                },
+                "runtimeInSeconds": 0.392
+            },
+            {
+                "name": "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_2_ID0000034",
+                "type": "compute",
+                "parents": [
+                    "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_2_ID0000013"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.2.nocontam.sfq",
+                        "sizeInBytes": 12608036
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.2.nocontam.fq",
+                        "sizeInBytes": 9701398
+                    }
+                ],
+                "avgCPU": 29.1262,
+                "machine": "compute-3",
+                "priority": 40,
+                "id": "ID0000034",
+                "category": "sol2sanger",
+                "command": {
+                    "program": "sol2sanger",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.2.nocontam.sfq",
+                        "HEP2_MSP1_Digests_s_1_sequence.2.nocontam.fq"
+                    ]
+                },
+                "runtimeInSeconds": 0.515
+            },
+            {
+                "name": "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_3_ID0000035",
+                "type": "compute",
+                "parents": [
+                    "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_3_ID0000014"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.3.nocontam.sfq",
+                        "sizeInBytes": 12672660
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.3.nocontam.fq",
+                        "sizeInBytes": 9735565
+                    }
+                ],
+                "avgCPU": 48.8525,
+                "machine": "compute-3",
+                "priority": 40,
+                "id": "ID0000035",
+                "category": "sol2sanger",
+                "command": {
+                    "program": "sol2sanger",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.3.nocontam.sfq",
+                        "HEP2_MSP1_Digests_s_1_sequence.3.nocontam.fq"
+                    ]
+                },
+                "runtimeInSeconds": 0.305
+            },
+            {
+                "name": "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_4_ID0000036",
+                "type": "compute",
+                "parents": [
+                    "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_4_ID0000015"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.4.nocontam.sfq",
+                        "sizeInBytes": 12931412
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.4.nocontam.fq",
+                        "sizeInBytes": 9901201
+                    }
+                ],
+                "avgCPU": 25.8567,
+                "machine": "compute-3",
+                "priority": 40,
+                "id": "ID0000036",
+                "category": "sol2sanger",
+                "command": {
+                    "program": "sol2sanger",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.4.nocontam.sfq",
+                        "HEP2_MSP1_Digests_s_1_sequence.4.nocontam.fq"
+                    ]
+                },
+                "runtimeInSeconds": 0.642
+            },
+            {
+                "name": "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_5_ID0000037",
+                "type": "compute",
+                "parents": [
+                    "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_5_ID0000016"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.5.nocontam.sfq",
+                        "sizeInBytes": 12914500
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.5.nocontam.fq",
+                        "sizeInBytes": 9887845
+                    }
+                ],
+                "avgCPU": 43.3213,
+                "machine": "compute-3",
+                "priority": 40,
+                "id": "ID0000037",
+                "category": "sol2sanger",
+                "command": {
+                    "program": "sol2sanger",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.5.nocontam.sfq",
+                        "HEP2_MSP1_Digests_s_1_sequence.5.nocontam.fq"
+                    ]
+                },
+                "runtimeInSeconds": 0.277
+            },
+            {
+                "name": "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_6_ID0000038",
+                "type": "compute",
+                "parents": [
+                    "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_6_ID0000017"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.6.nocontam.sfq",
+                        "sizeInBytes": 12902408
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.6.nocontam.fq",
+                        "sizeInBytes": 9878684
+                    }
+                ],
+                "avgCPU": 100.6579,
+                "machine": "compute-3",
+                "priority": 40,
+                "id": "ID0000038",
+                "category": "sol2sanger",
+                "command": {
+                    "program": "sol2sanger",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.6.nocontam.sfq",
+                        "HEP2_MSP1_Digests_s_1_sequence.6.nocontam.fq"
+                    ]
+                },
+                "runtimeInSeconds": 0.152
+            },
+            {
+                "name": "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_7_ID0000039",
+                "type": "compute",
+                "parents": [
+                    "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_7_ID0000018"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.7.nocontam.sfq",
+                        "sizeInBytes": 12766068
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.7.nocontam.fq",
+                        "sizeInBytes": 9774849
+                    }
+                ],
+                "avgCPU": 32.4094,
+                "machine": "compute-3",
+                "priority": 40,
+                "id": "ID0000039",
+                "category": "sol2sanger",
+                "command": {
+                    "program": "sol2sanger",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.7.nocontam.sfq",
+                        "HEP2_MSP1_Digests_s_1_sequence.7.nocontam.fq"
+                    ]
+                },
+                "runtimeInSeconds": 0.469
+            },
+            {
+                "name": "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_8_ID0000040",
+                "type": "compute",
+                "parents": [
+                    "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_8_ID0000019"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.8.nocontam.sfq",
+                        "sizeInBytes": 12763090
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.8.nocontam.fq",
+                        "sizeInBytes": 9772940
+                    }
+                ],
+                "avgCPU": 19.398,
+                "machine": "compute-3",
+                "priority": 40,
+                "id": "ID0000040",
+                "category": "sol2sanger",
+                "command": {
+                    "program": "sol2sanger",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.8.nocontam.sfq",
+                        "HEP2_MSP1_Digests_s_1_sequence.8.nocontam.fq"
+                    ]
+                },
+                "runtimeInSeconds": 0.598
+            },
+            {
+                "name": "sol2sanger_sol2sanger_HEP2_MSP1_Digests_s_1_sequence_9_ID0000041",
+                "type": "compute",
+                "parents": [
+                    "filterContams_filterContams_HEP2_MSP1_Digests_s_1_sequence_9_ID0000020"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "maq",
+                        "sizeInBytes": 171256
+                    },
+                    {
+                        "link": "input",
+                        "name": "maqindex",
+                        "sizeInBytes": 118456
+                    },
+                    {
+                        "link": "input",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.9.nocontam.sfq",
+                        "sizeInBytes": 4436434
+                    },
+                    {
+                        "link": "output",
+                        "name": "HEP2_MSP1_Digests_s_1_sequence.9.nocontam.fq",
+                        "sizeInBytes": 3397227
+                    }
+                ],
+                "avgCPU": 31.5,
+                "machine": "compute-3",
+                "priority": 40,
+                "id": "ID0000041",
+                "category": "sol2sanger",
+                "command": {
+                    "program": "sol2sanger",
+                    "arguments": [
+                        "HEP2_MSP1_Digests_s_1_sequence.9.nocontam.sfq",
+                        "HEP2_MSP1_Digests_s_1_sequence.9.nocontam.fq"
+                    ]
+                },
+                "runtimeInSeconds": 0.2
+            }
+        ],
+        "makespanInSeconds": 594.0
+    }
+}
